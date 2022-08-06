@@ -1,0 +1,27 @@
+
+html {
+    background: url('zv-zdnoe-nochnoe-nebo-zimoj.jpg');
+
+}
+
+
+h1, h2, img, p{
+    color: white;
+    text-align: center;
+    vertical-align: right;
+    line-height: 60px;
+
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 35em}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    }

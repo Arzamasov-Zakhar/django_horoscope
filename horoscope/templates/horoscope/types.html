@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ description_title }}
+{% endblock %}
+
+{% load static %}
+
+{% block css_additional %}
+<link rel="stylesheet" href=" {% static 'horoscope/css/types.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    {% include 'includes/navbar.html' %}
+    <h1>Стихии</h1>
+    <ul>
+        {% for type in types %}
+        <li> <a href={% url 'type-name' type %} > {{ type|title }}</a></li>
+        {% endfor %}
+    </ul>
+    <img
+            src="https://img1.hochu.ua/uploads/98/15/05/98150588-caf0-40b9-8254-057343478be9_360x300_fit.jpg"
+            title='Это стихии'
+            alt='Тут картинка со стихиями'
+            width="550"
+            height="350">
+    <br>
+
+    {% include 'includes/navbar.html' %}
+{% endblock %}
+

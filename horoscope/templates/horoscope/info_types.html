@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ description_title }}
+{% endblock %}
+
+{% load static %}
+
+{% block css_additional %}
+<link rel="stylesheet" href=" {% static 'horoscope/css/info_types.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    {% include 'includes/navbar.html' %}
+    <h1> {{ description_title|title }} </h1>
+
+    <ul>
+        {% for type in sign_type %}
+        <li> <a href={% url 'horoscope-name' type %} > {{ type|title }}</a></li>
+       {% endfor %}
+    </ul>
+    <br>
+
+    <img
+            src={{ description_img }}
+            title='Это {{ description_title }}'
+            alt='Тут картинка с {{ description_title }}'
+            width="600"
+            height="400">
+    <br>
+<br>
+<br>
+
+    {% include 'includes/navbar.html' %}
+{% endblock %}
+

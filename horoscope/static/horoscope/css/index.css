@@ -1,0 +1,41 @@
+
+html {
+    background: url('zv-zdnoe-nochnoe-nebo-zimoj.jpg');
+
+}
+
+ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    list-style-type: none;
+
+    width: 75%;
+    max-width: 35rem;
+    border-radius: 35px;
+    margin: 2rem auto;
+    padding: 2px;
+}
+
+ul li {
+    text-align: center;
+    width: 50%;
+    font-size: 2rem;
+    padding: 1rem 0.9rem;
+    color: #e8dede;
+}
+
+h1 {
+    color: #e8dede;
+    text-align: center;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-size:70px;
+
+}
+ul a {
+color: white
+}
+
+ul a:hover, ul a:active {
+    color: red;
+}

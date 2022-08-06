@@ -1,0 +1,8 @@
+<nav>
+    <a href="{% url 'horoscope-index' %}">Главная</a>
+    <a href="{% url 'horoscope-types' %}">Стихии</a>
+    <a href="http://astropsychology-family.ru/330-kratkiy-spravochnik-po-znakam-zodiaka-avt-m-levin.html" target="_blank">Источник</a>
+    {% for zodiac in zodiacs %}
+     <a href=" {% url 'horoscope-name' sign_zodiac=zodiac %} ">{{ zodiac|title }}</a>
+    {% endfor %}
+</nav>

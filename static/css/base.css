@@ -1,0 +1,32 @@
+
+html {
+    background: url('zv-zdnoe-nochnoe-nebo-zimoj.jpg');
+
+}
+
+nav {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 1px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    margin: 12px;
+}
+
+nav a:hover, ul a:active {
+    color: red;
+}
+
